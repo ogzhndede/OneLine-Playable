@@ -1,0 +1,97 @@
+{
+  "ignores": [
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/LocalizationController.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizationManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizedDropdown.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizedText.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizedTextTMP.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/Sheet.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizationSettings.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/LocalizationSync.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/SingletonBehaviour.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/CameraManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/EventManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/AudioManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/ObjectPoolManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/AudioSourceContainer.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/EndCardController.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/ResponsiveManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/TutorialManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/GameManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameBaseState.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateBeginning.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/DrawingManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawingController.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawPointGenerator.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/PathCreator.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/GeneratePathExample.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/BezierPath.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/PathCreatorData.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/PathFollower.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/PathSpawner.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/EndOfPathInstruction.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/PathPlacer.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/PathSceneTool.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/PathSpace.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Utility/MathUtility.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Utility/VertexPathUtility.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Utility/CubicBezierUtility.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/MinMax3D.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/GlobalDisplaySettings.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Utilities/PrefabHolder.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawPointBase.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PlayableTools/Playable/_Scripts/Controllers/TutorialController.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/Constants.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/TutorialManagerEditor.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "C:/Users/user/Unity/6.2.1/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/user/Unity/6.2.1/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/user/Unity/6.2.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

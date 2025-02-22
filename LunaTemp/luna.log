@@ -1,0 +1,80 @@
+report@config:load 7.47
+Authorized using stored user info.
+report@account:authorize 6.17
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity...........
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 8114.03
+report@config:load 4.35
+Using C:/Users/user/Unity/OneLine-Playable/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[27654] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage1/tmp/fonts/LiberationSans-27654/output_0.png (56kb)
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Resources:
+{}
+report@assets:stage2 1901.47
+report@assets:stage3 122.30
+[ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.08
+report@config:load 2.68
+report@config:unity 0.09
+report@code:compose 164.04
+Authorized using stored user info.
+report@account:authorize 2.67
+MSBuild version 17.13.9+e0f243f1e for .NET Framework
+
+Build started 2/22/2025 11:25:26 PM.
+
+
+
+Project "C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
+ResolveAssemblyReferences:
+  Could not read state file "obj\Debug\Scripts.csproj.AssemblyReference.cache". The format of this state file is not valid.
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_48 /highentropyva+ /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\com.unity.cinemachine\2.4.0\Cinemachine.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\LocalizationController.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\Constants.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizationManager.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizationSettings.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizationSync.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizedDropdown.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizedText.cs" "C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\LocalizedTextTMP.cs" "C:\Users\user\Unity\OneLine-Pla
+yable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Playable Localization\Scripts\Sheet.cs" C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\AudioSourceContainer.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawPointBase.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawPointGenerator.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\AudioManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\CameraManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\DrawingManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\EndCardController.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\EventManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\GameManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\ResponsiveManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\SingletonBehaviour.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\TutorialManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Managers\TutorialManagerEditor.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\ObjectPoolManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\StateMachines\GameState\GameBaseState.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\StateMachines\GameState\GameStateBeginning.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\StateMachines\GameState\GameStateManager.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\Utilities\PrefabHolder.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\BezierPath.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\EndOfPathInstruction.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\GlobalDisplaySettings.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\MinMax3D.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\PathCreator.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\PathCreatorData.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\PathSpace.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Objects\VertexPath.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Utility\CubicBezierUtility.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Utility\MathUtility.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\GeneratePathExample.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\PathFollower.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\PathPlacer.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\PathSceneTool.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\PathSpawner.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\PlayableTools\Playable\_Scripts\Controllers\TutorialController.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(3,7): error CS0246: The type or namespace name 'JetBrains' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(111,10): error CS0246: The type or namespace name 'CanBeNullAttribute' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(111,10): error CS0246: The type or namespace name 'CanBeNull' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+Done Building Project "C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)) -- FAILED.
+
+[ error ] $
+[ error ] $Build FAILED.
+[ error ] $
+[ error ] $
+[ error ] $"C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+[ error ] $(CoreCompile target) -> 
+[ error ] $  C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(3,7): error CS0246: The type or namespace name 'JetBrains' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+[ error ] $  C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(111,10): error CS0246: The type or namespace name 'CanBeNullAttribute' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+[ error ] $  C:\Users\user\Unity\OneLine-Playable\LunaTemp\stage3\processed-scripts\Assets\_InGame\Scripts\DrawContollers\DrawingController.cs(111,10): error CS0246: The type or namespace name 'CanBeNull' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\user\Unity\6.2.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+[ error ] $
+[ error ] $    0 Warning(s)
+[ error ] $    3 Error(s)
+[ error ] $
+[ error ] $Time Elapsed 00:00:00.96
+[ error ] $
+﻿
+[ error ] $﻿
+Diagnostics gathered successfully
+report@code:build 6869.85
+report@diagnostics:verify 0.42
+
+Fatal error while building C# code
+[ error ] $Project failed to build, check project diagnostics
+Error: DIAGNOSTICS_FATAL_ERROR
+    at Function.checkForErrors (C:\Users\user\Unity\6.2.1\pipeline\Jakefile.js:6:2991248)
+    at async _0x4be061.action (C:\Users\user\Unity\6.2.1\pipeline\Jakefile.js:6:2996346)

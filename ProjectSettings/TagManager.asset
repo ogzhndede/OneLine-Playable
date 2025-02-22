@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2800220929
+    locked: 0
+  - name: Board
+    uniqueID: 2490852951
+    locked: 0
+  - name: Drawing
+    uniqueID: 1424472511
+    locked: 0
+  - name: Line
+    uniqueID: 287070277
+    locked: 0
