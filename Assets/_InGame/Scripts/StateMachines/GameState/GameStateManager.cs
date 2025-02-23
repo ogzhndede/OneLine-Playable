@@ -1,14 +1,15 @@
+using System;
 using System.Collections.Generic;
+using _InGame.Scripts.Managers;
+using _InGame.Scripts.StateMachines.GameState;
 using PlayableAdsTool;
 using UnityEngine;
 
 public enum GameStateType
 {
-    GateOpen,
-    Beginning,
+    GameInitialize,
+    TutorialShow,
     InGame,
-    InPlaceTutorial,
-    InUpgradeTutorial,
     GameEnd
 }
 
@@ -42,17 +43,23 @@ public class GameStateManager : SingletonBehaviour<GameStateManager>
     void Awake()
     {
         //Set Game State type and its state
-        AddState(GameStateType.Beginning, new GameStateBeginning(GameStateType.Beginning));
-
-        // ExitFromAllStates(); //Reset all states
-        SwitchState(GameStateType.GateOpen, true);
+        AddState(GameStateType.GameInitialize, new GameStateGameInitialize(GameStateType.GameInitialize));
+        AddState(GameStateType.TutorialShow, new GameStateTutorialShow(GameStateType.TutorialShow));
+        AddState(GameStateType.InGame, new GameStateInGame(GameStateType.InGame));
+        AddState(GameStateType.GameEnd, new GameStateGameEnd(GameStateType.GameEnd));
     }
 
-    //! REMOVE THIS COMMENT LINE IF ANY STATE WILL PERFORM AN UPDATE OPERATION WITHIN ITSELF.
-    // void Update()
-    // {
-    //     CurrentState.UpdateState(this);
-    // }
+    //CHANGE STATE ON START TO AVOID MISREFERENCES
+    private void Start() 
+    {
+        SwitchState(GameStateType.GameInitialize, true);
+    }
+
+    
+    void Update()
+    {
+        CurrentState.UpdateState(this);
+    }
 
     private void SwitchState(GameStateType stateType, bool forceSwitch = false)
     {

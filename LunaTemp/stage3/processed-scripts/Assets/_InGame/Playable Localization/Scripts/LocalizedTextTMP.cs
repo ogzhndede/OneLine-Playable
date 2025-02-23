@@ -7,8 +7,6 @@ namespace PlayableAdsTool
     public class LocalizedTextTMP : MonoBehaviour
     {
         public string LocalizationKey;
-        public string BeforeText;
-        public string AfterText;
 
         public void Start()
         {
@@ -23,7 +21,8 @@ namespace PlayableAdsTool
 
         private void Localize()
         {
-            GetComponent<TextMeshProUGUI>().text = BeforeText+LocalizationManager.Localize(LocalizationKey)+AfterText;
+            GetComponent<TextMeshProUGUI>().font = LocalizationController.Instance.CurrentFont;
+            GetComponent<TextMeshProUGUI>().text = LocalizationManager.Localize(LocalizationKey);
         }
     }
 }

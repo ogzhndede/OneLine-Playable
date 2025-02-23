@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
+using _InGame.Scripts.Managers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _InGame.Scripts.DrawContollers
 {
@@ -13,7 +11,7 @@ namespace _InGame.Scripts.DrawContollers
         [SerializeField] private LineRenderer _lineRenderer;
 
         //CONTROL VARIABLES
-        [FormerlySerializedAs("DrawPoints")] public List<DrawPointBase> AllDrawPoints = new List<DrawPointBase>();
+        public List<DrawPointBase> AllDrawPoints = new List<DrawPointBase>();
         public List<DrawPointBase> SelectedDrawPoints = new List<DrawPointBase>();
 
 
@@ -28,12 +26,13 @@ namespace _InGame.Scripts.DrawContollers
         public void DragAction([Bridge.Ref] Vector2 touchPoint)
         {
             var currentDrawPoint = GetCurrentDrawPoint();
-            var closestBorderPoint = currentDrawPoint.GetClosestBorderPoint(touchPoint);
+            if(currentDrawPoint == null) return;
+            var closestBorderPoint = currentDrawPoint?.GetClosestBorderPoint(touchPoint);
 
             float distanceToCurrentDrawPoint = Vector2.Distance(touchPoint, currentDrawPoint.transform.position);
             float distanceToClosestBorderPoint = Vector2.Distance(touchPoint, closestBorderPoint.transform.position);
 
-            //kontrol et ve uygunsa listeye al
+            //CHECK AND ADD TO LIST
             if (distanceToCurrentDrawPoint > distanceToClosestBorderPoint &&
                 closestBorderPoint.CanPointSelectable())
             {
@@ -43,7 +42,17 @@ namespace _InGame.Scripts.DrawContollers
 
         public void UnClickAction()
         {
+            CheckFailDrawing();
             ClearDrawPoints();
+        }
+
+        private void CheckFailDrawing()
+        {
+            if (DrawingManager.Instance.GetDrawingCompletePercent() < 1 && SelectedDrawPoints.Count > 4)
+            {
+                EventManager.OnFailedToDraw?.Invoke();
+                EventManager.OnPlaySound?.Invoke(SoundTypes.Wrong, 1, 1);
+            }
         }
 
         #endregion
@@ -58,6 +67,8 @@ namespace _InGame.Scripts.DrawContollers
             {
                 _lineRenderer.SetPosition(i, SelectedDrawPoints[i].transform.position);
             }
+            
+            EventManager.OnCheckFillSlider?.Invoke();
         }
 
         private void ClearDrawPoints()
@@ -70,6 +81,7 @@ namespace _InGame.Scripts.DrawContollers
             }
 
             SelectedDrawPoints.Clear();
+            EventManager.OnCheckFillSlider?.Invoke();
         }
 
         private void AddToDrawPoints(DrawPointBase drawPoint)
@@ -87,6 +99,13 @@ namespace _InGame.Scripts.DrawContollers
             drawPoint.SelectPoint();
             SelectedDrawPoints.Add(drawPoint);
             UpdateLineRenderer();
+
+            //CHECK WIN STATE
+            if (DrawingManager.Instance.GetDrawingCompletePercent() >= 1)
+            {
+                EventManager.OnCompleteDrawing?.Invoke();
+                EventManager.OnPlaySound?.Invoke(SoundTypes.Correct, 1, 1);
+            }
         }
         
 
@@ -108,7 +127,6 @@ namespace _InGame.Scripts.DrawContollers
             return SelectedDrawPoints[SelectedDrawPoints.Count - 1];
         }
 
-        [CanBeNull]
         public DrawPointBase GetClosestDrawPointOnWorldSpace([Bridge.Ref] Vector2 touchPoint, DrawPointType pointType)
         {
             if (AllDrawPoints == null || AllDrawPoints.Count == 0) return null;

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63817d93022759543b57e795c78efe11, type: 3}
   m_Name: LocalizationSettings
   m_EditorClassIdentifier: 
-  TableId: TableId
+  TableId: 1mLQL1ihQD8S_V6DHSvWBcsjNGQxjR4n7qdaTd_kkk0k
   Sheets:
-  - Name: 
-    Id: 0
-    TextAsset: {fileID: 4900000, guid: ae4782078e88f7b49a4d7158a1e3414a, type: 3}
+  - Name: OneLinePlayable
+    Id: 1032069791
+    TextAsset: {fileID: 4900000, guid: 68c6412a78a849848b6a004315853f0b, type: 3}
   SaveFolder: {fileID: 102900000, guid: 427c03d85e966734ead9a50d1e49b468, type: 3}

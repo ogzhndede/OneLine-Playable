@@ -17,7 +17,13 @@ namespace _InGame.Scripts.DrawContollers
 
         [SerializeField] private List<DrawPointBase> BorderDrawPoints = new List<DrawPointBase>();
 
-        [SerializeField] private int PointConnectionCount;
+        public int MaxConnectionCount;
+        public int PointConnectionCount;
+
+        private void Awake()
+        {
+            MaxConnectionCount = BorderDrawPoints.Count < 4 ? BorderDrawPoints.Count : 3; //Tek 
+        }
 
         public void SetBorderDrawPoints(List<DrawPointBase> drawPoints)
         {
@@ -34,7 +40,7 @@ namespace _InGame.Scripts.DrawContollers
             PointConnectionCount = 0;
         }
 
-        #region GETTERs
+        #region GETTERS
 
         public DrawPointBase GetClosestBorderPoint(Vector2 point)
         {
@@ -59,7 +65,7 @@ namespace _InGame.Scripts.DrawContollers
 
         public bool CanPointSelectable()
         {
-            if (PointConnectionCount >= BorderDrawPoints.Count) return false;
+            if (PointConnectionCount >= MaxConnectionCount - 1) return false;
             return true;
         }
 

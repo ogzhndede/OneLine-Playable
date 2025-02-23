@@ -3,9 +3,7 @@ using UnityEngine;
 
 public enum CamStates
 {
-    MainCam,
-    ChestCam,
-    UpgradeCam
+    MainCam
 }
 
 namespace PlayableAdsTool
@@ -22,8 +20,6 @@ namespace PlayableAdsTool
         
         
         public CamStates CurrentCamState;
-        public Camera MainCam;
-        public Camera CanvasCam;
             
 
         private void OnEnable()
@@ -38,14 +34,6 @@ namespace PlayableAdsTool
             EventManager.OnCamChange -= SetDesiredCam;
         }
 
-        private void Update()
-        {
-            // CanvasCam.transform.position=MainCam.transform.position;
-            // CanvasCam.transform.rotation=MainCam.transform.rotation;
-            // CanvasCam.transform.localScale=MainCam.transform.localScale;
-            //
-            // CanvasCam.orthographicSize = MainCam.orthographicSize;
-        }
         
         private void SetDesiredCam(CamStates camStates)
         {

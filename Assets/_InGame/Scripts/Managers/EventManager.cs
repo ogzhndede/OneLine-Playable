@@ -1,45 +1,29 @@
 using System;
+using _InGame.Scripts.Managers;
 using UnityEngine;
 
 public static class EventManager
 {
-    public static Action OnGameStart;
+    //GAME EVENTS
     public static Action OnGameResume;
-    public static Action OnGameFinish;
     public static Action<GameStateType> OnGameStateChange;
+    
+    //DRAWING EVENTS
+    public static Action OnCompleteDrawing;
+    public static Action OnFailedToDraw;
+    public static Action OnLoadDrawing;
+    public static Action OnCheckFillSlider;
 
+    //RESPONSIVE EVENTS
     public static Action<ScreenOrientation> OnScreenChange;
     public static Action<AspectRatio> OnAspectRatioChange;
     public static Action<CamStates> OnCamChange;
-
     public static Action<bool> OnEndCardOpen;
 
-    public static Action<SoundTypes, bool> OnSetSound;
+    //SOUND EVENTS
     public static Action<SoundTypes, float, float> OnPlaySound;
-
-    public static Action<int> OnSetTutorialStep;
-
-    public static Action<int> OnMoneyChange;
-    public static Action<bool> OnCheckButtonsActivation;
-
-    public static Action<GameObject> OnSpawnCoin;
-
-    public static Action<GameObject, bool> OnEmojiControl;
-    public static Action<bool, GameObject> OnTutorialHandControl;
-
-    public static Action<GameObject> OnSpawnUnit;
-
-    public static Action OnStopMove;
-    public static Action OnResumeMove;
-
-    public static Action OnSpawnTower;
-    public static Action<GameObject> OnTowerUpgrade;
-    public static Action OnExplodeTowers;
-
-    public static Action<GameObject> OnEnemyDie;
-
-    public static Action<bool> OnCheckUIFillAmount;
-
-    public static Action OnSpriteDirectionCheck;
-    public static Action OnTriggerExplodeWalls;
+    
+    //TUTORIAL EVENTS
+    public static Action<TutorialType> OnShowTutorial;
+    public static Action<TutorialType> OnCloseTutorial;
 }

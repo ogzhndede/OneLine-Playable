@@ -5,14 +5,8 @@ using Random = UnityEngine.Random;
 
 public enum SoundTypes
 {
-    VulcanTower,
-    DoubleCannonTower,
-    CardClick,
-    TowerPlace,
-    CardClickWrong,
-    DragonAttack,
-    Coin,
-    TowerExplode
+    Correct,
+    Wrong
 }
 
 

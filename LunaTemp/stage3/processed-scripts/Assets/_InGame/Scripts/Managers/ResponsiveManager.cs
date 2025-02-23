@@ -21,11 +21,6 @@ public enum AspectRatio
     Vertical_3_4
 }
 
-public enum BannerOptions
-{
-    Option1,
-    Option2,
-}
 
 [Serializable]
 public class UIData
@@ -61,15 +56,8 @@ namespace PlayableAdsTool
         public List<UIData> Vertical_9_20;
         public List<UIData> Vertical_9_16;
         public List<UIData> Vertical_3_4;
-        
-        [Header("Banner Settings -------------------------------------------"), Space(10)]
-        public Image BannerVertical;
-        public Image BannerHorizontal;
 
-        public bool UseOptionalBanner;
-        public BannerOptions BannerOptions;
-        public Sprite[] VerticalOptions;
-        public Sprite[] HorizontalOptions;
+        public GameObject Banner;
 
         private void OnEnable()
         {
@@ -88,7 +76,6 @@ namespace PlayableAdsTool
 
         private void Update()
         {
-            // foreach (var element in UiElements) { element._rectTransform.localRotation = Quaternion.Euler(Vector3.zero); }
             CheckScreenOrientation();
             if (Input.GetKeyDown(KeyCode.S))
                 SaveResponsive();
@@ -111,7 +98,6 @@ namespace PlayableAdsTool
             else if (aspectRatio >= 1 && aspectRatio < 1.5f && CurrentAspectRatio != AspectRatio.Horizantal_4_3) //4:3 Yatay
             {
                 SetScreen(AspectRatio.Horizantal_4_3, ScreenOrientation.Horizontal);
-              
             }
             else if (aspectRatio >= 0.6f && aspectRatio < 1f && CurrentAspectRatio != AspectRatio.Vertical_3_4) //3:4 Dikey
             {
@@ -132,11 +118,8 @@ namespace PlayableAdsTool
             CurrentScreenOrientation = screenOrientation;
             CurrentAspectRatio = aspectRatio;
             LoadResponsive(CurrentAspectRatio);
-            SetBanner(CurrentScreenOrientation);
             EventManager.OnScreenChange?.Invoke(CurrentScreenOrientation);
             EventManager.OnAspectRatioChange?.Invoke(CurrentAspectRatio);
-            
-            EventManager.OnSpriteDirectionCheck?.Invoke();
         }
 
         private void SaveUIDataList(List<UIData> uiDataList)
@@ -157,15 +140,24 @@ namespace PlayableAdsTool
 
                 uiDataList.Add(tempData);
             }
-            
+
 
             Debug.Log(CurrentAspectRatio + " list saved.");
         }
 
         private void LoadUIDataList(List<UIData> uiDataList)
         {
-            if (uiDataList == null) { Debug.Log("UI data list is null."); return; }
-            if (uiDataList.Count == 0) { Debug.Log("UI data list is empty."); return; }
+            if (uiDataList == null)
+            {
+                Debug.Log("UI data list is null.");
+                return;
+            }
+
+            if (uiDataList.Count == 0)
+            {
+                Debug.Log("UI data list is empty.");
+                return;
+            }
 
             for (int i = 0; i < UiElements.Length; i++)
             {
@@ -255,51 +247,12 @@ namespace PlayableAdsTool
             }
         }
 
-        private void SetBanner(ScreenOrientation orientation)
-        {
-            if (BannerVertical == null || BannerVertical == null) return;
-            if (UseOptionalBanner)
-            {
-                switch (BannerOptions)
-                {
-                    case BannerOptions.Option1:
-                        BannerVertical.sprite = VerticalOptions[0];
-                        BannerHorizontal.sprite = HorizontalOptions[0];
-                        break;
-                    case BannerOptions.Option2:
-                        BannerVertical.sprite = VerticalOptions[1];
-                        BannerHorizontal.sprite = HorizontalOptions[1];
-                        break;
-                    default:
-                        BannerVertical.sprite = VerticalOptions[0];
-                        BannerHorizontal.sprite = HorizontalOptions[0];
-                        break;
-                }
-            }
-
-            if (orientation == ScreenOrientation.Vertical)
-            {
-                BannerVertical.gameObject.SetActive(true);
-                BannerHorizontal.gameObject.SetActive(false);
-            }
-            else
-            {
-                BannerVertical.gameObject.SetActive(false);
-                BannerHorizontal.gameObject.SetActive(true);
-            }
-        }
 
         private void SetBannerVisibilty(bool value)
         {
-            if (BannerVertical == null || BannerVertical == null) return;
-            if (CurrentScreenOrientation == ScreenOrientation.Vertical)
-            {
-                BannerVertical.gameObject.SetActive(!value);
-            }
-            else
-            {
-                BannerHorizontal.gameObject.SetActive(!value);
-            }
+            if (Banner == null) return;
+
+            Banner.gameObject.SetActive(!value);
         }
 
 #if UNITY_EDITOR
@@ -328,7 +281,6 @@ namespace PlayableAdsTool
             if (Application.isPlaying)
                 ChangeResolution((int)CurrentAspectRatio);
 
-            // ShowSelectedResponsive();
             SetUIElementNames();
         }
 

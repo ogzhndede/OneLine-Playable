@@ -20,17 +20,6 @@
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/SingletonBehaviour.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/CameraManager.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/EventManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/AudioManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/ObjectPoolManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/AudioSourceContainer.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/EndCardController.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/ResponsiveManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/TutorialManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/GameManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateManager.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameBaseState.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateBeginning.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/DrawingManager.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawingController.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawPointGenerator.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/PathCreator.cs",
@@ -52,13 +41,35 @@
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PathCreator/Core/Runtime/Objects/GlobalDisplaySettings.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Utilities/PrefabHolder.cs",
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/DrawContollers/DrawPointBase.cs",
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/PlayableTools/Playable/_Scripts/Controllers/TutorialController.cs"
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/DrawingManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Others/FillSliderController.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/GameManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameBaseState.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateGameEnd.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/EndCardController.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/TutorialManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateTutorialShow.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateGameInitialize.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/StateMachines/GameState/GameStateInGame.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/AudioManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/ObjectPoolManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Utilities/AudioSourceContainer.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/ResponsiveManager.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Others/FeedbackPanelController.cs"
     ],
     [
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Playable Localization/Scripts/Constants.cs"
     ],
     [
-      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/TutorialManagerEditor.cs"
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Managers/UIManager.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Others/PotionBottleTutorial.cs",
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Others/TutorialBase.cs"
+    ],
+    [
+      "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/_InGame/Scripts/Others/TutorialAnimationHelper.cs"
     ],
     [
       "C:/Users/user/Unity/OneLine-Playable/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"

@@ -26,7 +26,6 @@ namespace _InGame.Scripts.DrawContollers
             UpdatePointList();
         }
 
-        [Button]
         private void UpdatePointList()
         {
             if (_pathCreator == null) return;
@@ -76,7 +75,18 @@ namespace _InGame.Scripts.DrawContollers
                 selectedPoint.SetBorderDrawPoints(nearestPoints);
             }
         }
-        
+
+        [Button]
+        public void UpdateDrawPointList()
+        {
+            _drawingController.AllDrawPoints.Clear();
+            foreach (Transform child in transform)
+            {
+                var drawPointBase = child.GetComponent<DrawPointBase>();
+                _drawingController.AllDrawPoints.Add(drawPointBase);
+            }
+        }
+
         private void ClearDrawPoints()
         {
             foreach (DrawPointBase point in _drawingController.AllDrawPoints)
@@ -90,8 +100,8 @@ namespace _InGame.Scripts.DrawContollers
 
         private void OnDrawGizmos()
         {
-            if(_drawingController.AllDrawPoints.Count != 0) return;
-            
+            if (_drawingController.AllDrawPoints.Count != 0) return;
+
             Gizmos.color = Color.yellow;
             foreach (Vector3 point in GizmoPoints)
             {
