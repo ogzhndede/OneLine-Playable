@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_InGame/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/_InGame/Scenes/OL-PF-potionbottle-tek-15sn.unity
+    guid: 0ca3650620c55c84abdb848eea19711d
+  - enabled: 1
+    path: Assets/_InGame/Scenes/Logicus-PF-potionbottle-15sn.unity
+    guid: 8be46c455be7a60478c09bcec13e9cfb
   m_configObjects: {}
